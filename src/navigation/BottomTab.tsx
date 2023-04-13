@@ -9,7 +9,7 @@ import ProfileScreen from '../screens/profileScreen/ProfileScreen'
 const BottomTab = () => {
   const Tab = createBottomTabNavigator();
   return (
-    <Tab.Navigator>
+    <Tab.Navigator screenOptions={{headerShown: false}}>
       <Tab.Screen name="Home" component={HomeScreen} options={{
         tabBarIcon: ({focused}) => (
           <>

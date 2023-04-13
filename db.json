@@ -1,0 +1,54 @@
+{
+  "get": [
+    {
+      "id": 1,
+      "nama": "Raihan Afdal Hadi",
+      "nik": "3278051603000001",
+      "nomor_hp": "081214604085",
+      "tanggal_registrasi": "2023-02-08",
+      "npwp": "1234567890123456"
+    },
+    {
+      "id": 2,
+      "nama": "Jane Doe",
+      "nik": "3278051603000002",
+      "nomor_hp": "081214604086",
+      "tanggal_registrasi": "2023-02-08",
+      "npwp": "1234567890123456"
+    },
+    {
+      "id": 3,
+      "nama": "Gus nando",
+      "nik": "3278051603000003",
+      "nomor_hp": "081214604087",
+      "tanggal_registrasi": "2023-02-08",
+      "npwp": "1234567890123456"
+    },
+    {
+      "id": 4,
+      "nama": "Syidiq fahrul",
+      "nik": "3278051603000004",
+      "nomor_hp": "081214604088",
+      "tanggal_registrasi": "2023-02-08",
+      "npwp": "1234567890123456"
+    },
+    {
+      "id": 5,
+      "nama": "Herdiana",
+      "nik": "3278051603000005",
+      "nomor_hp": "081214604085",
+      "tanggal_registrasi": "2023-02-08",
+      "npwp": "1234567890123456"
+    }
+  ],
+  "post": [
+    {
+      "id": 1,
+      "nama": "Raihan Afdal Hadi",
+      "nik": "3278051603000001",
+      "nomor_hp": "081214604085",
+      "tanggal_registrasi": "2023-02-08",
+      "npwp": "1234567890123456"
+    }
+  ]
+}
