@@ -75,7 +75,6 @@ const Navigation = () => {
         
         <Stack.Screen name='Preview' component={Preview} />
         
-
         <Stack.Screen name='BottomTab' component={BottomTab} />
       </Stack.Navigator>
     </NavigationContainer>

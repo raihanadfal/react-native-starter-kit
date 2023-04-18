@@ -4,42 +4,14 @@ import CustomInput from '../../component/CustomInput/CustomInput'
 import CustomButton from '../../component/CustomButton/CustomButton'
 import { useNavigation } from '@react-navigation/native'
 import axios from 'axios'
-import AsyncStorage from '@react-native-async-storage/async-storage'
 
 const LoginScreen = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-//   const [token, setToken] = useState('')
   const navigation = useNavigation();
-
-//   const handleLogin = () => {
-//     // Kirim request login ke endpoint API
-//     fetch('http://localhost:8000/api/login', {
-//       method: 'POST',
-//       headers: {
-//         'Content-Type': 'application/json',
-//       },
-//       body: JSON.stringify({
-//         email: email,
-//         password: password,
-//       }),
-//     })
-//       .then(response => response.json())
-//       .then(data => {
-//         if (data.token) {
-//           // Simpan token akses di storage lokal atau state di aplikasi
-//           AsyncStorage.setItem('access_token', data.token);
-//           // Navigasi ke halaman lain di aplikasi
-//           navigation.navigate('BottomTab')
-//         } else {
-//           Alert.alert('Login failed', 'Invalid email or password');
-//         }
-//       })
-//       .catch(error => console.error(error));
-//   };
+  const [email, setEmail] = useState('');
+  const [password,setPassword] = useState('');
 
   const handleLogin = async () => {
-    axios.post('http://127.0.0.1:3000/login', {
+    axios.post('http://10.0.2.2:3000/api/auth/signin', {
     email: email,
     password: password,
     })
@@ -49,7 +21,7 @@ const LoginScreen = () => {
     })
     .catch(error => {
       console.log(error);
-      Alert.alert('Username atau password salah')
+      Alert.alert('Gagal', 'Login gagal')
     });
   };
 
